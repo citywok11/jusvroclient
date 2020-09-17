@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AAA</title>
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo animated fadeInDownBig">
+                        <img src="img/logo1.png">
+                </div>
+                <div class="menu animated fadeInDownBig" id="myMenu">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="#">Contact</a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                              </a>
+                </div>
+            </div>
+            <div class="name animated fadeInLeftBig">
+                <h5>Professional Photography</h5>
+                <h1>JusVro <br> Photography</h1>
+            </div>
+        </div>
+        <script>
+                function myFunction() {
+                  var x = document.getElementById("myMenu");
+                  if (x.className === "menu") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "menu";
+                  }
+                }
+                </script>
+    </body>
+</html>

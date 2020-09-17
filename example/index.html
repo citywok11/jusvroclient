@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/mainpage.css"/>
+  <script src="https://kit.fontawesome.com/e84eb03cfb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Start Header -->
+   <header>
+   	  <div class="container">
+   	  	  <div class="logo">
+   	  	  	  <a href=""><span>Jus</span>Vro</a>
+   	  	  </div>
+   	  	  <div class="trigger-main">
+   	  	  	 <a href="javascript:void(0);" class="ham-burger">
+   	  	  	 	 <span></span>
+   	  	  	 	 <span></span>
+   	  	  	 </a>
+   	  	  </div>
+   	  	  <div class="navbar">
+   	  	  	  <ul>
+                   <li><a href="#home" class="active">Home</a></li>
+                   <li><a href="Portfolio.html">My Portfolio</a></li>
+   	  	  	  	  <li><a href="#about">About</a></li>
+   	  	  	  	  <li><a href="#services">Services</a></li>
+   	  	  	  	  <li><a href="https://www.instagram.com/jusvro_photography">Contact</a></li>
+   	  	  	  </ul>
+   	  	  </div>
+   	  </div>
+   </header>
+  <!-- End Header -->
+
+  <!-- Start Home -->
+    <section class="home" id="home">
+       <div class="container">
+       	   <div class="home-text">
+       	   	     <h1>JusVro Photography</h1>
+       	   	     <h3>Professional Photographer</h3>
+       	   </div>
+       </div>
+    </section>
+  <!-- End Home -->
+ 
+  <!-- Start About -->
+    <section class="about" id="about">
+       <div class="container">
+			 <h2 class="title">About Me</h2>
+			 
+       	  <div class="about-content">
+       	  	  <div class="img">
+					<img src="img/portrait3.jpeg" alt="me">
+       	  	  
+
+	
+
+
+       	  	  </div>
+       	  	  <div class="description">
+       	  	  	  <h5>My name is Veronica - I am a freelance photographer who lives and works out of Westchester County</h5>
+						 <br>
+						 
+						
+						 <p> I currently have a full time “day job”, But in my spare time I am pursuing my passion for photography. I love taking photos of just about everything which is why I do not Specialize In one specific genre.
+						 <p>My main goal as your photographer is to capture your special moments in time which we can never get back. I’d love the opportunity to preserve your precious memories.
+								Please feel free to contact me.
+								</p>						 
+				   </div>
+
+				   <a href="Portfolio.html"  button class="btn-light">View My Portfolio</button></a>
+
+       	  </div>
+       </div>
+    </section>
+  <!-- End About -->
+
+
+
+
+  <!-- Start Service -->
+    <section class="services" id="services">
+    	<div class="container">
+    		 <h2 class="title">Services</h2>
+    		 <div class="services-content">
+    		 	 <div class="card">
+    		 	 	  <div class="box">
+    		 	 	  	  <div class="icon">
+								<i class="fas fa-birthday-cake"></i>
+							</div>
+    		 	 	  	  <h3>Children's Birthdays</h3>
+    		 	 	  </div>
+    		 	 </div>
+    		 	 <div class="card">
+    		 	 	  <div class="box">
+    		 	 	  	  <div class="icon">
+								<i class="fas fa-camera"></i>
+    		 	 	  	  </div>
+    		 	 	  	  <h3>Wedding Photography</h3>
+    		 	 	  </div>
+    		 	 </div>
+    		 	 <div class="card">
+    		 	 	  <div class="box">
+    		 	 	  	  <div class="icon">
+								<i class="fas fa-baby"></i>
+    		 	 	  	  </div>
+    		 	 	  	  <h3>Pregnancy Announcements</h3>
+    		 	 	  </div>
+    		 	 </div>
+    		 	 <div class="card">
+    		 	 	  <div class="box">
+    		 	 	  	  <div class="icon">
+								<i class="far fa-building"></i>    		 	 	  	 
+							 </div>
+    		 	 	  	  <h3>Real Estate Photography</h3>
+    		 	 	  </div>
+    		 	 </div>
+    		 	 <div class="card">
+    		 	 	  <div class="box">
+    		 	 	  	  <div class="icon">
+								<span class="fa fa-pencil"></span>
+    		 	 	  	  </div>
+    		 	 	  	  <h3>Landscape Photography</h3>
+    		 	 	  </div>
+    		 	 </div>
+    		 	 <div class="card">
+    		 	 	  <div class="box">
+    		 	 	  	  <div class="icon">
+    		 	 	  	  	 <span class="fa fa-rocket"></span>
+    		 	 	  	  </div>
+    		 	 	  	  <h3>Events </h3>
+    		 	 	  </div>
+    		 	 </div>
+    		 </div>
+    	</div>
+    </section>
+ <!-- End Service -->
+
+
+
+ <!-- Start Footer -->
+   <footer>
+   	  <div class="container">
+   	  	  <div class="social-links">
+   	  	  	 <ul>
+   	  	  	 	 <li><a href="https://www.instagram.com/jusvro_photography"><span class="fab fa-instagram"></span></a></li>
+   	  	  	 </ul>
+   	  	  </div>
+   	  </div>
+   </footer>
+ <!-- End Footer -->
+
+
+
+<!-- jquery code -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		var bottom=$("header").outerHeight();
+		var header=$("header").offset().top + bottom;
+     $(window).scroll(function(){
+          // header fixed only when window width greater than 991px
+         if($(window).width()>991){
+     	if($(window).scrollTop()>=header){
+     		$("header").addClass("sticky")
+     	}
+     	else{
+     	 $("header").removeClass("sticky")	
+     	}
+     }
+     })
+
+     // navbar active link
+
+     $(".navbar ul li a").click(function(){
+     	 $(".navbar ul li a").removeClass("active")
+     	 $(this).addClass("active");
+     })
+  
+    $(".ham-burger").click(function(){
+    	$(this).toggleClass("active")
+    	$(".navbar").toggleClass("open");
+    })
+
+	})
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
